@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       log-level:
-        type: Choice
+        type: choice
         options:
           - info
           - warn
