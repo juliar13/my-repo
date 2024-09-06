@@ -2,9 +2,10 @@ name: Choice
 on:
   workflow_dispatch:
     inputs:
-      type: log-level
-      options:
-        - info
-        - warn
-        - error
-      
+      log-level:
+        type: Choice
+        options:
+          - info
+          - warn
+          - error
+
