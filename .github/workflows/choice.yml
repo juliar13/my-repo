@@ -8,4 +8,9 @@ on:
           - info
           - warn
           - error
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ inputs.log-level }}"
 
