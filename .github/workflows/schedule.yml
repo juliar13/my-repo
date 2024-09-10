@@ -1,9 +1,10 @@
 name: Schedule
 on:
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '*/5 * * * *'
 jobs:
   run:
+    name: Schedule job
     runs-on: ubuntu-latest
     steps:
       - run: date
