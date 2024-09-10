@@ -6,3 +6,8 @@ jobs:
         steps:
             - run: echo "::debug::This is a debug log"
             - run: echo "This is a debug log"
+            - run: |
+                date
+                set -x
+                date
+                hostname
