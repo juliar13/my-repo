@@ -4,7 +4,7 @@ jobs:
     log:
         runs-on: ubuntu-latest
         env:
-            PASSWORD: SuperSecretValue
+            SPASSWORD: SuperSecretValue
         steps:
             - run: echo "::debug::This is a debug log"
             - run: echo "This is a debug log"
@@ -17,5 +17,5 @@ jobs:
                 echo "::group::Show environment variables"
                 printenv
                 echo "::endgroup::"
-            - run: echo "::add-mask::${PASSWORD}"
-            - run: echo "${PASSWORD}"
+            - run: echo "::add-mask::${SPASSWORD}"
+            - run: echo "${SPASSWORD}"
