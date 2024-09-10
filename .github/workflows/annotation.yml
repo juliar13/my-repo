@@ -10,4 +10,4 @@ jobs:
             - run: |
                 echo "## Title :rocket" >> "${GITHUB_STEP_SUMMARY}"
                 echo "- rfirst line" >> "${GITHUB_STEP_SUMMARY}"
-                echo "- 2nd line :rocket"" >> "${GITHUB_STEP_SUMMARY}"
+                echo "- 2nd line :rocket" >> "${GITHUB_STEP_SUMMARY}"
