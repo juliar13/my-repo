@@ -1,0 +1,19 @@
+name: Matrix2
+on:
+    push:
+        paths: ['.github/workflows/matrix-2.yml']
+jobs:
+    print:
+        strategy:
+            matrix:
+                include:
+                    - os: ubuntu-latest
+                      version: 20
+                    - os: macos-latest
+                      version: 18
+        runs-on: ${{ matrix.os }}
+        steps:
+            - uses: actions/setup-node@v4
+              with:
+                node-version: ${{ matrix.version }}
+            - run: echo "${RUNNER_OS}" && node --version
