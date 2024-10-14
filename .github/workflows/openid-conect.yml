@@ -2,7 +2,7 @@ name: OpenID Connect
 on: push
 env:
   ROLE_ARN: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/github-actions-role
-  SESSION_NAME: gh-oidc-${{ github.rn_id }}-${ github.run_attempt }}
+  SESSION_NAME: gh-oidc-${{ github.run_id }}-${ github.run_attempt }}
 jobs:
   connect:
     runs-on: ubuntu-latest
